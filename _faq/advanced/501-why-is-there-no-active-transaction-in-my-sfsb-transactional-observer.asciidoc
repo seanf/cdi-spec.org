@@ -11,4 +11,4 @@ public void userAdded(@Observes(during=TransactionPhase.AFTER_SUCCESS) @Added Us
 }
 ----
 
-in a stateful session bean, you will get ''transaction is not active''. You need to use +REQUEIRES_NEW+ by adding +@TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)+ to the bean or the to the method.
+in a stateful session bean, you will get ''transaction is not active''. You need to use +REQUIRES_NEW+ by adding +@TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)+ to the bean or to the method.
